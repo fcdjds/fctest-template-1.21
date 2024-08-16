@@ -1,0 +1,44 @@
+{
+	"schemaVersion": 1,
+	"id": "fctest",
+	"version": "${version}",
+	"name": "fctest",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/fctest/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.fc.fctest.Fctest"
+		],
+		"client": [
+			"com.fc.fctest.FctestClient"
+		],
+		"fabric-datagen": [
+			"com.fc.fctest.FctestDataGenerator"
+		]
+	},
+	"mixins": [
+		"fctest.mixins.json",
+		{
+			"config": "fctest.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
