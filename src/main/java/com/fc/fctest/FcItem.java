@@ -1,6 +1,5 @@
 package com.fc.fctest;
 
-import net.fabricmc.api.ModInitializer;
 import net.minecraft.component.type.FoodComponent;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -19,6 +18,7 @@ public class FcItem {
 
     static FoodComponent FCTEST_FOOD_COMPONENT;
     public static final Item FCTEST_ITEM=register(new Item(new Item.Settings().food(FCTEST_FOOD_COMPONENT)),"fctest_item");
-
+    public static final Item FCTEST_ITEM2=register(new Item(new Item.Settings().food(FCTEST_FOOD_COMPONENT)),"fctest_item2");
+    public static final Item AWP =register(new Item(new Item.Settings().food(FCTEST_FOOD_COMPONENT)),"awp");
     public static void initialize(){}
 }

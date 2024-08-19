@@ -6,5 +6,6 @@ public class LoadingItems implements ModInitializer {
     @Override
     public void onInitialize() {
     FcItem.initialize();
+    FcBlock.initialize();
     }
 }
