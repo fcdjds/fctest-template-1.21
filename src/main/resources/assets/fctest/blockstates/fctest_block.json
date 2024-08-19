@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "fctest:block/fctest_block" }
+  }
+}
